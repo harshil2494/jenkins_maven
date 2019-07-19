@@ -9,7 +9,7 @@ pipeline {
     stage ("clone git") {
       steps {
         git url: 'https://github.com/harshil2494/jenkins_maven.git'
-        mvn -version
+        sh 'mvn -version'
       }
     }
       
